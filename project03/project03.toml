@@ -1,0 +1,161 @@
+[[tests]]
+name = "rstr_1"
+input = ["./rstr", "a"]
+expected = """
+C: a
+Asm: a
+"""
+rubric = 3
+
+[[tests]]
+name = "rstr_1"
+input = ["./rstr", "FooBar"]
+expected = """
+C: raBooF
+Asm: raBooF
+"""
+rubric = 3
+
+[[tests]]
+name = "rstr_1"
+input = ["./rstr", "CS315 Computer Architecture"]
+expected = """
+C: erutcetihcrA retupmoC 513SC
+Asm: erutcetihcrA retupmoC 513SC
+"""
+rubric = 3
+
+[[tests]]
+name = "rstr_rec_1"
+input = ["./rstr_rec", "a"]
+expected = """
+C: a
+Asm: a
+"""
+rubric = 3
+
+[[tests]]
+name = "rstr_rec_1"
+input = ["./rstr_rec", "FooBar"]
+expected = """
+C: raBooF
+Asm: raBooF
+"""
+rubric = 3
+
+[[tests]]
+name = "rstr_rec_1"
+input = ["./rstr_rec", "CS315 Computer Architecture"]
+expected = """
+C: erutcetihcrA retupmoC 513SC
+Asm: erutcetihcrA retupmoC 513SC
+"""
+rubric = 3
+
+[[tests]]
+name = "eval_1"
+input = ["./eval", "4+32"]
+expected = """
+C: 36
+Asm: 36
+"""
+rubric = 8
+
+[[tests]]
+name = "eval_2"
+input = ["./eval", "4+32/2"]
+expected = """
+C: 20
+Asm: 20
+"""
+rubric = 8
+
+[[tests]]
+name = "eval_3"
+input = ["./eval", "(4+32)/2"]
+expected = """
+C: 18
+Asm: 18
+"""
+rubric = 8
+
+[[tests]]
+name = "eval_4"
+input = ["./eval", "(2*100)+(4*10)+(5*1)"]
+expected = """
+C: 245
+Asm: 245
+"""
+rubric = 8
+
+[[tests]]
+name = "pack_bytes_1"
+input = ["./pack_bytes", "1", "2", "3", "4"]
+expected = """
+C: 16909060
+Asm: 16909060
+"""
+rubric = 5
+
+[[tests]]
+name = "pack_bytes_2"
+input = ["./pack_bytes", "255", "255", "255", "255"]
+expected = """
+C: -1
+Asm: -1
+"""
+rubric = 5
+
+[[tests]]
+name = "unpack_bytes_1"
+input = ["./unpack_bytes", "16909060"]
+expected = """
+C: 1 2 3 4
+Asm: 1 2 3 4
+"""
+rubric = 5
+
+[[tests]]
+name = "unpack_bytes_2"
+input = ["./unpack_bytes", "-2"]
+expected = """
+C: 255 255 255 254
+Asm: 255 255 255 254
+"""
+rubric = 5
+
+[[tests]]
+name = "get_bitseq_1"
+input = ["./get_bitseq", "94116", "12", "15"]
+expected = """
+C: 6
+Asm: 6
+"""
+rubric = 1
+
+[[tests]]
+name = "get_bitseq_2"
+input = ["./get_bitseq", "94117", "4", "7"]
+expected = """
+C: 10
+Asm: 10
+"""
+rubric = 1
+
+[[tests]]
+name = "get_bitseq_signed_1"
+input = ["./get_bitseq_signed", "94117", "12", "15"]
+expected = """
+C: 6
+Asm: 6
+"""
+rubric = 4
+
+[[tests]]
+name = "get_bitseq_signed_2"
+input = ["./get_bitseq_signed", "94117", "4", "7"]
+expected = """
+C: -6
+Asm: -6
+"""
+rubric = 4
