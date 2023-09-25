@@ -1,3 +1,6 @@
+[project]
+timeout = 5
+
 [[tests]]
 name = "rstr_1"
 input = ["./rstr", "FooBar"]
