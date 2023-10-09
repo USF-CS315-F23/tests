@@ -282,10 +282,10 @@ Size          = 32 slots
 Block size    = 4 words
 Ways          = 4
 References    = 3802
-Hits          = 3124 (82.17% hit ratio)
-Misses        = 678 (17.83% miss ratio)
+Hits          = 3181 (83.67% hit ratio)
+Misses        = 621 (16.33% miss ratio)
 Misses (cold) = 8
-Misses (hot)  = 670
+Misses (hot)  = 613
 % Used        = 100.00%
 """
 rubric = 7
