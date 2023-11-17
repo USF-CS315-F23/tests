@@ -147,7 +147,7 @@ input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$p
 expected = """
 15-prog-quadratic: passed
 """
-rubric = 3
+rubric = 5
 
 
 [[tests]]
@@ -183,5 +183,23 @@ input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$p
 expected = """
 19-prog-to-upper: passed
 """
-rubric = 5
+rubric = 10
+
+
+[[tests]]
+name = "20-prog-swap"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/20-prog-swap.dig"]
+expected = """
+20-prog-swap: passed
+"""
+rubric = 10
+
+
+[[tests]]
+name = "21-prog-sort"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/21-prog-sort.dig"]
+expected = """
+21-prog-sort: passed
+"""
+rubric = 10
 
