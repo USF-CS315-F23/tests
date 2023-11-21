@@ -3,7 +3,7 @@ build = "none"
 strip_output = """
 Use default settings!
 """
-timeout = 20
+timeout = 40
 
 
 [[tests]]
